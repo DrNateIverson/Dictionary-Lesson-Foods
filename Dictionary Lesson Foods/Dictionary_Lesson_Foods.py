@@ -1,10 +1,12 @@
-name=['banana','egg','cheese pizza','tamales']
-vegan=[True,False,False,True]
+name_list=['banana','egg','cheese pizza','tamales']
+#vegan=[True,False,False,True]
 #calories=[105,78, 213, 284]
 
-for k in range(len(name)):
-    if vegan[k]==True:
-        print(f"{name[k]} is vegan")
+vegan_dict={'banana':True, 'egg':False, 'cheese pizza':False, 'tamales':True  }
+
+for name in name_list:
+    if vegan_dict[name]==True:
+        print(f"{name} is vegan")
     else:
-        print(f"{name[k]} is not vegan")
+        print(f"{name} is not vegan")
 
