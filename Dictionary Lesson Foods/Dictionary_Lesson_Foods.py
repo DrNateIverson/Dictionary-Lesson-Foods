@@ -5,7 +5,7 @@ name_list=['banana','egg','cheese pizza','tamales']
 vegan_dict={'banana':True, 'egg':False, 'cheese pizza':False, 'tamales':True  }
 
 for name in name_list:
-    if vegan_dict[name]==True:
+    if vegan_dict[name]:
         print(f"{name} is vegan")
     else:
         print(f"{name} is not vegan")
